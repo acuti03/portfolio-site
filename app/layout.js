@@ -1,10 +1,6 @@
+import Navbar from '@components/Navbar'
 import '@styles/globals.css'
-import { Nunito } from 'next/font/google'
-
-const roboto = Nunito({
-	subsets: ['latin'],
-	weight: '700',
-})
+import { dm_sans, roboto_mono } from './fonts'
 
 export const metadata = {
 	title: "Portfolio project",
@@ -15,9 +11,8 @@ const RootLayout = ({ children }) => {
 	return(
 		<html lang='en'>
 			<body>
-				<main className={roboto.className}>
-					{ children }
-				</main>
+				<Navbar/>
+				{ children }
 			</body>
 		</html>
 	)
