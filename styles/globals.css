@@ -1,0 +1,48 @@
+* {
+	margin: 0;
+	padding: 0;
+	text-decoration: none;
+}
+
+nav {
+	margin: auto;
+	width: 80%;
+	display: flex;
+	justify-content: space-around;
+}
+
+nav .links {
+	padding: 10px;
+	display: flex;
+}
+
+nav .links a {
+	padding: 10px;
+	color: black;
+	font-size: 18px;
+	margin-left: 10px;
+}
+
+.logo {
+	margin-top: 5px;
+	padding: 10px;
+	font-size: 23px;
+	color: black;
+}
+
+.buttons {
+	padding: 10px;
+	margin-top: 5px;
+}
+
+.buttons button {
+	cursor: pointer;
+	padding: 10px;
+	border-radius: 8px;
+	background-color: #ffbc0a;
+	border: 1px solid #fff;
+}
+
+.buttons button:hover {
+	background-color: #f7c23e;
+}
