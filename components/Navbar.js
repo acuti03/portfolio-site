@@ -8,19 +8,21 @@ import Buttons from "./Buttons"
 
 const Navbar = () => {
 	return(
-		<nav className={exo_2.className}>
-			<Logo/>
-			<div className="links">
-				<Link href='/'>Home</Link>
-				<Link href='/works'>Works</Link>
-				<Link style={{display:"inline-flex", alignItems:"center"}}
-				href='https://github.com/acuti03/portfolio-site' target="_blank">
-					<FaGithub/>
-					Source
-				</Link>
-			</div>
-			<Buttons/>
-		</nav>
+		<div className="container">
+			<nav className={exo_2.className}>
+				<Logo/>
+				<div className="links">
+					<Link href='/'>Home</Link>
+					<Link href='/works'>Works</Link>
+					<Link style={{display:"inline-flex", alignItems:"center"}}
+						href='https://github.com/acuti03/portfolio-site' target="_blank">
+						<FaGithub/>
+						Source
+					</Link>
+				</div>
+				<Buttons/>
+			</nav>
+		</div>
 	)
 }
 

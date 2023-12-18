@@ -3,7 +3,7 @@ import {
     Roboto_Mono, 
     Inter,
     Exo_2,
-    Nunito
+    Nunito,
 } from 'next/font/google'
 
 export const dm_sans = DM_Sans({

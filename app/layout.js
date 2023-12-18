@@ -1,6 +1,7 @@
 import Navbar from '@components/Navbar'
 import '@styles/globals.css'
-import { dm_sans, roboto_mono } from './fonts'
+import { Providers } from './providers'
+
 
 export const metadata = {
 	title: "Portfolio project",
@@ -11,8 +12,10 @@ const RootLayout = ({ children }) => {
 	return(
 		<html lang='en'>
 			<body>
-				<Navbar/>
-				{ children }
+				<Providers>
+					<Navbar/>
+					{ children }
+				</Providers>
 			</body>
 		</html>
 	)

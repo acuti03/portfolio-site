@@ -4,6 +4,12 @@
 	text-decoration: none;
 }
 
+.container{
+	backdrop-filter: blur(2px);
+	position: sticky;
+	top: 0;
+}
+
 nav {
 	margin: auto;
 	width: 80%;
@@ -33,16 +39,4 @@ nav .links a {
 .buttons {
 	padding: 10px;
 	margin-top: 5px;
-}
-
-.buttons button {
-	cursor: pointer;
-	padding: 10px;
-	border-radius: 8px;
-	background-color: #ffbc0a;
-	border: 1px solid #fff;
-}
-
-.buttons button:hover {
-	background-color: #f7c23e;
 }
