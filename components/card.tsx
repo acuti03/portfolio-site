@@ -23,7 +23,7 @@ export default function CardDef(props: Props) {
 				border: '1px solid rgba(255, 255, 255, 0.18)',
 			}}
 		>
-			<Image src={props.image} alt="background" className='h-40 rounded-xl mb-5 ring-1 dark:ring-slate-800 ring-slate-200'/>
+			<Image src={props.image} alt="background" style={{objectFit: 'cover'}} className='h-40 rounded-xl mb-5 ring-1 dark:ring-slate-800 ring-slate-200'/>
 			<h3 className='tracking-tight font-medium'>{props.title}</h3>
 			<p className="text-slate-500 dark:text-slate-400 h-24">
 				{props.description}
