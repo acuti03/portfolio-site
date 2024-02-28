@@ -2,7 +2,7 @@
 
 <a href='https://simoneacuti.vercel.app/'>https://simoneacuti.vercel.app/</a>
 
-<img src="/assets/3.jpeg">
+<img src="/assets/0.png">
 
 <h2>Libraries and Frameworks</h2>
 <ul>
