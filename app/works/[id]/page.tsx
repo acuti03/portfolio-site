@@ -51,7 +51,7 @@ export default function Page({ params }: { params: { id: string } }) {
 					<p className='dark:text-slate-400 text-slate-600 mt-5'>
 						{description}
 					</p>
-					<div className='flex flex-row gap-3 mt-5 mb-5'>
+					<div className='flex flex-row flex-wrap gap-3 mt-5 mb-5'>
 						{
 							(tags as { [key: string]: string[] })[title.replace(/\s/g, "")].map((tag:string, index: number) => (
 								<p key={index} className='dark:bg-sky-950 dark:text-sky-500 text-sky-600 bg-sky-100 px-3 py-2 rounded-xl'>{tag}</p>
