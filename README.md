@@ -1,6 +1,6 @@
 # Simone Acuti's portfolio
 
-<a href='https://simoneacuti.vercel.app/'>https://simoneacuti.vercel.app/</a>
+<a href='https://simoneacuti.vercel.app/' target='_blank'>https://simoneacuti.vercel.app/</a>
 
 <img src="/assets/0.png">
 
