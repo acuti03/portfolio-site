@@ -4,15 +4,11 @@ import "./globals.css";
 import Navbar from "../components/navbar";
 import Provider from "./provider";
 import { Metadata } from "next";
-import Image from "next/image";
-import image from "@/assets/background.png";
-import AnimatedCursor from "react-animated-cursor";
-
 
 const poppins = Poppins({ subsets: ["latin"], weight: ['300', '400', '600'] });
 
 export const metadata: Metadata = {
-  title: "Simosite"
+  title: "Simone Acuti"
 };
 
 

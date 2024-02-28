@@ -39,10 +39,10 @@ export default function Home() {
 						<h3 className="mt-2 text-xl font-normal tracking-normal">Student at University of Ferrara</h3>
 						<div className="w-1/3 h-0.5 bg-slate-300 dark:bg-slate-700 mt-5"></div>
 						<div className="mt-6 flex text-2xl gap-4 dark:text-slate-400 text-slate-500">
-							<Link href='#' target="_blank" className="hover:text-sky-500"><RiInstagramFill className=""/></Link>
-							<Link href='#' target="_blank" className="hover:text-sky-500"><FaLinkedin className=""/></Link>
-							<Link href='#' target="_blank" className="hover:text-sky-500"><FaGithub className=""/></Link>
-							<Link href='#' target="_blank" className="hover:text-sky-500"><FaDiscord className=""/></Link>
+							<Link href='https://www.instagram.com/simoneacuti/' target="_blank" className="hover:text-sky-500"><RiInstagramFill className=""/></Link>
+							<Link href='https://www.linkedin.com/in/simone-acuti-93aa45251' target="_blank" className="hover:text-sky-500"><FaLinkedin className=""/></Link>
+							<Link href='https://github.com/acuti03' target="_blank" className="hover:text-sky-500"><FaGithub className=""/></Link>
+							<Link href='https://discordapp.com/users/700814608021323945' target="_blank" className="hover:text-sky-500"><FaDiscord className=""/></Link>
 						</div>
 					</div>
 					<div className="max-lg:mt-10 lg:w-1/2 sm:mr-24 max-sm:mx-4 sm:ml-24 dark:text-slate-400 text-slate-600">

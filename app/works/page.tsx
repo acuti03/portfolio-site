@@ -13,10 +13,10 @@ import checkers from '@/assets/3.png';
 export default function Work() {
 	const {theme, setTheme} = useTheme();
 	const cards:Props[] = [
-		{ title: 'Portfolio Site', description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Non quis impedit adipisci provident veritatis amet harum.', image: portfolio, isNew: true},
-		{ title: 'Queue System', description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Non quis impedit adipisci provident veritatis amet harum.', image: queueSystem },
-		{ title: 'Wearable', description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Non quis impedit adipisci provident veritatis amet harum.', image: wearable },
-		{ title: 'Checkers', description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Non quis impedit adipisci provident veritatis amet harum.', image: checkers },
+		{ title: 'Portfolio Site', description: 'A portfolio site made in react using next js and tailwindcss to collect my projects and show them for possible job offers.', image: portfolio, isNew: true},
+		{ title: 'Queue System', description: 'A university group project for the networking course done with django simulating an mmc queue system.', image: queueSystem },
+		{ title: 'Wearable', description: 'A mobile app made with react native that implements artificial intelligence to create outfits based on your preferences.', image: wearable },
+		{ title: 'Checkers', description: 'The checkers game to test my knowledge of the C language after the programming course.', image: checkers },
 	]
 
 	return (
