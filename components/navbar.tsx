@@ -23,6 +23,8 @@ export default function Navbar() {
 		setMounted(true);
 	}, []);
 
+	theme === 'system' && setTheme('dark')
+
 	if (!mounted) {
 		return null;
 	}
@@ -81,11 +83,11 @@ export default function Navbar() {
 				<div className="md:flex space-x-4 max-md:hidden">
 					{
 						theme === 'dark' ?
-						<IconButton style="text-white font-bold py-2 px-2 rounded-lg" onClick={handleTheme}>
+						<IconButton onClick={handleTheme}>
 							<IoSunnyOutline style={{width: '24px', height: '24px'}}/>
 						</IconButton>
 						:
-						<IconButton style="text-white font-bold py-2 px-2 rounded-lg" onClick={handleTheme}>
+						<IconButton onClick={handleTheme}>
 							<IoMoonOutline style={{width: '24px', height: '24px'}} className="text-black"/>
 						</IconButton>
 					}
