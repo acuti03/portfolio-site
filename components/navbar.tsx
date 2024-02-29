@@ -4,7 +4,6 @@ import IconButton from "./iconButton";
 import { FaGithub } from "react-icons/fa6";
 import { IoSunnyOutline, IoMoonOutline } from "react-icons/io5";
 import Link from 'next/link'
-import { usePathname } from 'next/navigation'
 import Logo from '@/components/Logo'
 import { useTheme } from 'next-themes'
 import { GoArrowRight } from "react-icons/go";
@@ -14,7 +13,6 @@ import { useRouter } from 'next/navigation'
 
 export default function Navbar() {
 	const {theme, setTheme} = useTheme();
-	const pathname = usePathname();
 	const [mounted, setMounted] = useState(false);
 	const [open, setOpen] = useState(false);
 	const router = useRouter()
@@ -60,7 +58,7 @@ export default function Navbar() {
 							<Link href="/works" onClick={() => setOpen(!open)} className='hover:text-sky-500'>
 								<p>Works</p>
 							</Link>
-							<Link href="/works" onClick={() => setOpen(!open)}>
+							<Link href="https://github.com/acuti03/portfolio-site" target="_blank" onClick={() => setOpen(!open)}>
 								<p className='hover:text-sky-500 flex'>Source<FaGithub className="mt-1 ml-1"/></p>
 							</Link>
 						</div>
