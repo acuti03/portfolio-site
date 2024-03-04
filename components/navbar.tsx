@@ -90,7 +90,7 @@ export default function Navbar() {
 						</IconButton>
 					}
 					<IconButton>
-						<Link href='https://github.com/acuti03/mmc_queue_system' target="_blank">
+						<Link href='https://github.com/acuti03/portfolio-site' target="_blank">
 							<FaGithub style={{width: '24px', height: '24px'}}/>
 						</Link>
 					</IconButton>
