@@ -16,14 +16,14 @@ export default function Page({ params }: { params: { id: string } }) {
 	const description = [
 		'A portfolio site made in react using next js and tailwindcss to collect my projects and show them for possible job offers.',
 		'A university group project for the networking course done with django simulating an mmc queue system.',
-		'A mobile app made with react native that implements artificial intelligence to create outfits based on your preferences.',
+		//'A mobile app made with react native that implements artificial intelligence to create outfits based on your preferences.',
 		'The checkers game to test my knowledge of the C language after the programming course.'
 	][parseInt(params.id)];
 
 	const tags: Object = {
 		Portfolio: ['React', 'Next.js', 'TailwindCSS', 'TypeScript'],
 		QueueSystem: ['Python', 'html', 'css', 'JavaScript', 'Django'],
-		Wearable: ['React Native', 'TypeScript', 'Azure', 'AI'],
+		//Wearable: ['React Native', 'TypeScript', 'Azure', 'AI'],
 		Checkers: ['C', 'ncurses']
 	}
 
