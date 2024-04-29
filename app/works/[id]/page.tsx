@@ -6,12 +6,13 @@ import portfolio from '@/assets/0.png';
 import queueSystem from '@/assets/1.jpg';
 import wearable from '@/assets/2.jpeg';
 import checkers from '@/assets/3.png';
+import bookingDashboard from '@/assets/4.png';
 import Link from 'next/link';
 
 
 export default function Page({ params }: { params: { id: string } }) {
 
-	const image = [portfolio, queueSystem, wearable, checkers][parseInt(params.id)];
+	const image = [portfolio, queueSystem, wearable, checkers, bookingDashboard][parseInt(params.id)];
 	const title = ['Portfolio', 'Queue System', 'Wearable', 'Checkers', 'Booking Dashboard'][parseInt(params.id)];
 	const description = [
 		'A portfolio site made in react using next js and tailwindcss to collect my projects and show them for possible job offers.',
