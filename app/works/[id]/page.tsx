@@ -26,7 +26,7 @@ export default function Page({ params }: { params: { id: string } }) {
 		QueueSystem: ['Python', 'html', 'css', 'JavaScript', 'Django'],
 		//Wearable: ['React Native', 'TypeScript', 'Azure', 'AI'],
 		Checkers: ['C', 'ncurses'],
-		Dashboard: ['React', 'TypeScript', 'Tauri', 'Firebase']
+		BookingDashboard: ['React', 'TypeScript', 'Tauri', 'Firebase']
 	}
 
 	return (

@@ -9,6 +9,7 @@ import portfolio from '@/assets/0.png';
 import queueSystem from '@/assets/1.jpg';
 import wearable from '@/assets/2.jpeg';
 import checkers from '@/assets/3.png';
+import bookingDashboard from '@/assets/4.png';
 
 export default function Work() {
 	const {theme, setTheme} = useTheme();
@@ -17,7 +18,7 @@ export default function Work() {
 		{ title: 'Queue System', description: 'A university group project for the networking course done with django simulating an mmc queue system.', image: queueSystem },
 		//{ title: 'Wearable', description: 'A mobile app made with react native that implements artificial intelligence to create outfits based on your preferences.', image: wearable },
 		{ title: 'Checkers', description: 'The checkers game to test my knowledge of the C language after the programming course.', image: checkers },
-		{ title: 'Booking Dashboard', description: 'A dashboard for booking appointments for a gym.', image: checkers }
+		{ title: 'Booking Dashboard', description: 'A dashboard for booking appointments for a gym.', image: bookingDashboard }
 	]
 
 	return (
