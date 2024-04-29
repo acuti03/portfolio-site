@@ -12,19 +12,21 @@ import Link from 'next/link';
 export default function Page({ params }: { params: { id: string } }) {
 
 	const image = [portfolio, queueSystem, wearable, checkers][parseInt(params.id)];
-	const title = ['Portfolio', 'Queue System', 'Wearable', 'Checkers'][parseInt(params.id)];
+	const title = ['Portfolio', 'Queue System', 'Wearable', 'Checkers', 'Booking Dashboard'][parseInt(params.id)];
 	const description = [
 		'A portfolio site made in react using next js and tailwindcss to collect my projects and show them for possible job offers.',
 		'A university group project for the networking course done with django simulating an mmc queue system.',
 		//'A mobile app made with react native that implements artificial intelligence to create outfits based on your preferences.',
-		'The checkers game to test my knowledge of the C language after the programming course.'
+		'The checkers game to test my knowledge of the C language after the programming course.',
+		'A dashboard for booking appointments for a gym.'
 	][parseInt(params.id)];
 
 	const tags: Object = {
 		Portfolio: ['React', 'Next.js', 'TailwindCSS', 'TypeScript'],
 		QueueSystem: ['Python', 'html', 'css', 'JavaScript', 'Django'],
 		//Wearable: ['React Native', 'TypeScript', 'Azure', 'AI'],
-		Checkers: ['C', 'ncurses']
+		Checkers: ['C', 'ncurses'],
+		Dashboard: ['React', 'TypeScript', 'Tauri', 'Firebase']
 	}
 
 	return (

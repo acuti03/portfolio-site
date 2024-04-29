@@ -17,6 +17,7 @@ export default function Work() {
 		{ title: 'Queue System', description: 'A university group project for the networking course done with django simulating an mmc queue system.', image: queueSystem },
 		//{ title: 'Wearable', description: 'A mobile app made with react native that implements artificial intelligence to create outfits based on your preferences.', image: wearable },
 		{ title: 'Checkers', description: 'The checkers game to test my knowledge of the C language after the programming course.', image: checkers },
+		{ title: 'Booking Dashboard', description: 'A dashboard for booking appointments for a gym.', image: checkers }
 	]
 
 	return (
