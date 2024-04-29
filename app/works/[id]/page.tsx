@@ -12,8 +12,8 @@ import Link from 'next/link';
 
 export default function Page({ params }: { params: { id: string } }) {
 
-	const image = [portfolio, queueSystem, wearable, checkers, bookingDashboard][parseInt(params.id)];
-	const title = ['Portfolio', 'Queue System', 'Wearable', 'Checkers', 'Booking Dashboard'][parseInt(params.id)];
+	const image = [portfolio, queueSystem, checkers, bookingDashboard][parseInt(params.id)];
+	const title = ['Portfolio', 'Queue System', 'Checkers', 'Booking Dashboard'][parseInt(params.id)];
 	const description = [
 		'A portfolio site made in react using next js and tailwindcss to collect my projects and show them for possible job offers.',
 		'A university group project for the networking course done with django simulating an mmc queue system.',
