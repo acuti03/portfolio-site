@@ -64,11 +64,11 @@ export default function Navbar() {
 						</div>
 					</div>
 					}
-					<button className="max-md:hidden mt-1 group/link rounded-2xl px-3 py-1 bg-sky-100 hover:bg-sky-200 text-sky-600 dark:bg-sky-950 dark:hover:bg-sky-900 dark:text-sky-500 text-sm"
+{/* 					<button className="max-md:hidden mt-1 group/link rounded-2xl px-3 py-1 bg-sky-100 hover:bg-sky-200 text-sky-600 dark:bg-sky-950 dark:hover:bg-sky-900 dark:text-sky-500 text-sm"
 						onClick={() => router.replace('/works/2')}>
 						New mobile app <span className="mx-1">&middot;</span> wearable
 						<GoArrowRight style={{fontSize: '18px'}} className="inline-block transition-transform group-hover/link:translate-x-1 group-focus-visible/link:translate-x-1 motion-reduce:transition-none ml-2"/>
-					</button>
+					</button> */}
 					<div className="max-md:hidden space-x-5 md:flex">
 						<Link href="/" className='hover:text-sky-500'>
 							Home
