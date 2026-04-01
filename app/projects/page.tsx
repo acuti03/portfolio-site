@@ -1,11 +1,11 @@
 import Card from '@/components/card'
 import { Props } from '@/components/card'
-import Image from 'next/image'
+
 import background from '@/assets/background.png';
-import portfolio from '@/assets/0.png';
 import queueSystem from '@/assets/1.jpg';
-import wearable from '@/assets/2.jpeg';
 import checkers from '@/assets/3.png';
+import gradcam from '@/assets/6.png';
+
 
 export default function Projects() {
 		const cards:Props[] = [
@@ -13,6 +13,7 @@ export default function Projects() {
 				{ title: 'Queue System', description: 'A university group project for the networking course done with django simulating an mmc queue system.', image: queueSystem },
 				//{ title: 'Wearable', description: 'A mobile app made with react native that implements artificial intelligence to create outfits based on your preferences.', image: wearable },
 				{ title: 'Checkers', description: 'The checkers game to test my knowledge of the C language after the programming course.', image: checkers },
+				{ title: 'Detection of Brain Tumours', description: 'Development of a deep learning model for tumour detection using EEG signals.', image: gradcam },
 		]
 
 	return (

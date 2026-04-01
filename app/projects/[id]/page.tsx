@@ -3,6 +3,7 @@ import Link from 'next/link'
 
 import queueSystem from '@/assets/1.jpg'
 import checkers from '@/assets/3.png'
+import gradcam from '@/assets/6.png'
 
 type Project = {
   title: string
@@ -26,6 +27,13 @@ const projects: Project[] = [
       'The checkers game to test my knowledge of the C language after the programming course.',
     tags: ['C', 'ncurses'],
   },
+  {
+    title: 'Detection of Brain Tumours',
+    image: gradcam,
+    description:
+      'Development of a deep learning model for tumour detection using EEG signals.',
+    tags: ['Python', 'TensorFlow', 'Keras'],
+  }
 ]
 
 const generateSlug = (title: string) => {

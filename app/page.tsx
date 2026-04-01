@@ -73,9 +73,9 @@ export default function Home() {
 							Hi I am Simone Acuti, an italian student at University of Ferrara. I am a web developer and I am currently studying 
 							Computer Science. I am passionate about web development and I am always looking for new challenges.
 						</p>
-						<Link href="/works">
+						<Link href="./resume.pdf" target="_blank" rel="noopener noreferrer">
 							<button className="mt-10 text-sky-500 group/link dark:text-sky-500">
-								Check out my Works
+								My resume
 								<GoArrowUpRight 
 									className="inline-block text-xl transition-transform group-hover/link:-translate-y-1 group-hover/link:translate-x-1 group-focus-visible/link:-translate-y-1 group-focus-visible/link:translate-x-1 motion-reduce:transition-none ml-1 translate-y-px"
 								/>
