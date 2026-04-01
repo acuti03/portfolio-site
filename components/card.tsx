@@ -12,6 +12,7 @@ export type Props = {
 	theme?: string;
 }
 
+
 export default function CardDef(props: Props) {
 	const slug = props.title.toLowerCase().replace(/\s+/g, '-');
 	
