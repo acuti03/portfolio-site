@@ -19,7 +19,7 @@ export default function RootLayout({
 }>) {
 
 	return (
-		<html lang="en" className={poppins.className}>
+		<html lang="en" className={poppins.className} suppressHydrationWarning>
 			<body className="dark:bg-slate-900 dark:text-white text-slate-800">
 				{
 					<>

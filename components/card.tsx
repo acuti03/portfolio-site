@@ -1,4 +1,3 @@
-import React from 'react'
 import Image, { StaticImageData } from 'next/image'
 import { GoArrowUpRight } from "react-icons/go";
 import Link from 'next/link';
@@ -9,10 +8,13 @@ export type Props = {
 	image: StaticImageData;
 	id?: number;
 	isNew?: boolean;
+	isProjects?: boolean;
 	theme?: string;
 }
 
 export default function CardDef(props: Props) {
+	const slug = props.title.toLowerCase().replace(/\s+/g, '-');
+	
 	return (
 		<div className="w-80 ring-1 ring-slate-200 dark:ring-slate-800 rounded-2xl justify-center dark:bg-slate-800 p-6"
 			style={{
@@ -29,9 +31,9 @@ export default function CardDef(props: Props) {
 				{props.description}
 			</p>
 			<div className='flex mt-5 items-baseline'>
-				<Link href={`/works/${props.id}`}>
+				<Link href={props.isProjects ? `/projects/${slug}` : `/works/${slug}`}>
 					<button className='group/link bg-sky-200 dark:bg-sky-950 dark:text-sky-500 text-sky-600 px-3 py-2 rounded-2xl hover:bg-sky-300 dark:hover:bg-sky-900'>
-						View the works
+						{props.isProjects ? 'View the project' : 'View the work'}
 						<GoArrowUpRight className="inline-block text-xl transition-transform group-hover/link:-translate-y-1 group-hover/link:translate-x-1 group-focus-visible/link:-translate-y-1 group-focus-visible/link:translate-x-1 motion-reduce:transition-none ml-1 translate-y-px"/>
 					</button>
 				</Link>

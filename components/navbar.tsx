@@ -1,5 +1,5 @@
 "use client";
-import React, { useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 import IconButton from "./iconButton";
 import { FaGithub } from "react-icons/fa6";
 import { IoSunnyOutline, IoMoonOutline } from "react-icons/io5";
@@ -21,7 +21,12 @@ export default function Navbar() {
 		setMounted(true);
 	}, []);
 
-	theme === 'system' && setTheme('dark')
+	useEffect(() => {
+		if (theme === 'system') {
+			setTheme('dark');
+		}
+	}, [theme, setTheme])
+
 
 	if (!mounted) {
 		return null;
@@ -58,6 +63,9 @@ export default function Navbar() {
 							<Link href="/works" onClick={() => setOpen(!open)} className='hover:text-sky-500'>
 								<p>Works</p>
 							</Link>
+							<Link href="/projects" onClick={() => setOpen(!open)} className='hover:text-sky-500'>
+								<p>Projects</p>
+							</Link>
 							<Link href="https://github.com/acuti03/portfolio-site" target="_blank" onClick={() => setOpen(!open)}>
 								<p className='hover:text-sky-500 flex'>Source<FaGithub className="mt-1 ml-1"/></p>
 							</Link>
@@ -75,6 +83,9 @@ export default function Navbar() {
 						</Link>
 						<Link href="/works" className='hover:text-sky-500'>
 							<p>Works</p>
+						</Link>
+						<Link href="/projects" className='hover:text-sky-500'>
+							<p>Projects</p>
 						</Link>
 					</div>
 				</div>

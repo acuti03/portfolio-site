@@ -3,8 +3,6 @@ import Link from 'next/link'
 
 import queueSystem from '@/assets/1.jpg'
 import checkers from '@/assets/3.png'
-import bookingDashboard from '@/assets/4.png'
-import salesup from '@/assets/5.png'
 
 type Project = {
   title: string
@@ -14,17 +12,19 @@ type Project = {
 }
 
 const projects: Project[] = [
-	{
-    title: 'Salesup',
-    image: salesup,
-    description: 'AI-powered sales assistant that helps teams prepare efficiently, connect deeply, and sell more effectively.',
-    tags: ['React', 'TypeScript', 'AI', 'Next.js'],
+  {
+    title: 'Queue System',
+    image: queueSystem,
+    description:
+      'A university group project for the networking course done with django simulating an mmc queue system.',
+    tags: ['Python', 'HTML', 'CSS', 'JavaScript', 'Django'],
   },
   {
-    title: 'Booking Dashboard',
-    image: bookingDashboard,
-    description: 'A dashboard for booking appointments for a gym.',
-    tags: ['React', 'TypeScript', 'Tauri', 'Firebase'],
+    title: 'Checkers',
+    image: checkers,
+    description:
+      'The checkers game to test my knowledge of the C language after the programming course.',
+    tags: ['C', 'ncurses'],
   },
 ]
 
@@ -40,7 +40,7 @@ export default async function Page({ params }: { params: Promise<{ id: string }>
     return (
       <div className="text-center mt-10">
         <p>Project not found</p>
-        <Link href="/works" className="text-sky-500">
+        <Link href="/projects" className="text-sky-500">
           Go back
         </Link>
       </div>
@@ -77,12 +77,12 @@ export default async function Page({ params }: { params: Promise<{ id: string }>
       </div>
       <div className="sm:w-[500px] max-sm:max-w-lg px-2 mx-auto mt-5">
         <div className="flex flex-row gap-2 w-fit text-sm">
-          <Link href="/" className="text-slate-400 font-thin">
+          <Link href="/" className="text-slate-400 font-thin hover:text-slate-300">
             Home
           </Link>
           <p className="text-slate-400 font-thin">/</p>
-          <Link href="/works" className="text-slate-400 font-thin">
-            Works
+          <Link href="/projects" className="text-slate-400 font-thin hover:text-slate-300">
+            Projects
           </Link>
           <p className="text-slate-400 font-thin">/</p>
           <span className="opacity-90">{project.title}</span>
