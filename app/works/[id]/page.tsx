@@ -5,6 +5,7 @@ import queueSystem from '@/assets/1.jpg'
 import checkers from '@/assets/3.png'
 import bookingDashboard from '@/assets/4.png'
 import salesup from '@/assets/5.png'
+import circolo from "@/assets/7.png"
 
 type Project = {
   title: string
@@ -14,7 +15,7 @@ type Project = {
 }
 
 const projects: Project[] = [
-	{
+  {
     title: 'Salesup',
     image: salesup,
     description: 'AI-powered sales assistant that helps teams prepare efficiently, connect deeply, and sell more effectively.',
@@ -26,6 +27,12 @@ const projects: Project[] = [
     description: 'A dashboard for booking appointments for a gym.',
     tags: ['React', 'TypeScript', 'Tauri', 'Firebase'],
   },
+  {
+    title: "Circolo Italia Bologna App",
+    image: circolo,
+    description: "A mobile application for Circolo Italia Bologna that displays the results of the club’s football matches.",
+    tags: ["Expo", "TypeScript", "React Native"]
+  }
 ]
 
 const generateSlug = (title: string) => {
@@ -48,7 +55,7 @@ export default async function Page({ params }: { params: Promise<{ id: string }>
   }
 
   return (
-    <div className='py-10'>
+    <div className='p-10'>
       <div className="fixed inset-0 z-[-1] flex justify-between pointer-events-none">
         <div 
           className="w-[15%] h-full border-r border-slate-300 dark:border-slate-800"
@@ -75,7 +82,8 @@ export default async function Page({ params }: { params: Promise<{ id: string }>
           }}
         />
       </div>
-      <div className="sm:w-[500px] max-sm:max-w-lg px-2 mx-auto mt-5">
+
+      <div className="w-[70%] max-w-[500px] mx-auto mt-5">
         <div className="flex flex-row gap-2 w-fit text-sm">
           <Link href="/" className="text-slate-400 font-thin">
             Home
@@ -88,15 +96,17 @@ export default async function Page({ params }: { params: Promise<{ id: string }>
           <span className="opacity-90">{project.title}</span>
         </div>
       </div>
-      <div className="px-2 mt-7 flex flex-col items-center">
+
+      <div className="w-[70%] max-w-[500px] mx-auto mt-7 flex flex-col items-center">
         <Image
           src={project.image}
           alt={project.title}
           width={500}
-          className="rounded-2xl ring-1 ring-slate-200 dark:ring-slate-800 shadow-md"
+          className="w-full h-auto rounded-2xl ring-1 ring-slate-200 dark:ring-slate-800 shadow-md"
         />
-        <div className="flex flex-col sm:w-[500px] max-sm:max-w-lg">
-          <h1 className="sm:text-5xl max-sm:text-4xl mt-5 font-semibold dark:text-slate-300 tracking-tight">
+        
+        <div className="flex flex-col w-full">
+          <h1 className="text-3xl sm:text-4xl md:text-5xl mt-5 font-semibold dark:text-slate-300 tracking-tight">
             {project.title}
           </h1>
           <p className="dark:text-slate-400 text-slate-600 mt-5">
@@ -106,7 +116,7 @@ export default async function Page({ params }: { params: Promise<{ id: string }>
             {project.tags.map((tag, index) => (
               <p
                 key={index}
-                className="dark:bg-sky-950 dark:text-sky-500 text-sky-600 bg-sky-100 px-3 py-2 rounded-xl"
+                className="dark:bg-sky-950 dark:text-sky-500 text-sky-600 bg-sky-100 px-3 py-2 rounded-xl text-sm"
               >
                 {tag}
               </p>
